@@ -1,0 +1,14 @@
+[filter "lfs"]
+smudge = git-lfs smudge %f
+        required = true
+        clean = git-lfs clean %f
+[user]
+        name = SimonBrunsCC
+        email = simon.bruns@codecentric.de
+[core]
+        excludesfile = ~/.gitignore_global
+        autocrlf = input
+[color]
+        ui = auto
+[alias]
+        lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
